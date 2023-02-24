@@ -1,11 +1,18 @@
 ---
+mainfont: Font-Regular.otf
+mainfontoptions:
+- BoldFont=Font-Bold.otf
+- ItalicFont=Font-Italic.otf
+- BoldItalicFont=Font-BoldItalic.otf
+---
+---
 ## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+title: "Отчёт по лабораторной работе №3"
+subtitle: "Операционные системы"
+author: "Кочарян Никита Робертович
 
 ## Generic otions
-lang: ru-RU
+lang: russian
 toc-title: "Содержание"
 
 ## Bibliography
@@ -23,12 +30,12 @@ papersize: a4
 documentclass: scrreprt
 ## I18n polyglossia
 polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
+name: russian
+options:
+- spelling=modern
+- babelshorthands=true
 polyglossia-otherlangs:
-  name: english
+name: english
 ## I18n babel
 babel-lang: russian
 babel-otherlangs: english
@@ -45,12 +52,12 @@ monofontoptions: Scale=MatchLowercase,Scale=0.9
 biblatex: true
 biblio-style: "gost-numeric"
 biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
+- parentracker=true
+- backend=biber
+- hyperref=auto
+- language=auto
+- autolang=other*
+- citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
 figureTitle: "Рис."
 tableTitle: "Таблица"
@@ -61,57 +68,89 @@ lolTitle: "Листинги"
 ## Misc options
 indent: true
 header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
+- \usepackage{indentfirst}
+- \usepackage{float} # keep figures where there are in the text
+- \floatplacement{figure}{H} # keep figures where there are in the text
 ---
 
 # Цель работы
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
-
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+Научиться оформлять отчёты с помощью легковесного языка разметки Markdown.
 
 # Задание
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
-
-# Теоретическое введение
-
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
-
-Например, в табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
-
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
-
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
-
-Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
+- Сделать отчет по предыдущей лабораторной работе в формате Markdown.
+- В качестве отчёта предоставить отчёты в 3 форматах: pdf, docx и md.
 
 # Выполнение лабораторной работы
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. @fig:001).
+1.  Установка git(рис. [@fig:001]).
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+![1](image/1.png){#fig:001 width=90%}
+
+2.  Установка gh(рис. [@fig:002]).
+
+![2](image/2.png){#fig:002 width=90%}
+
+3.  Базовая настройка гит: задаем имя и email владельца репозитория, настройка utf-8 в выводе сообщений git(рис. [@fig:003]) 
+
+![3](image/3.png){#fig:003 width=90%}
+
+4.  Базовая настройка гит: задаем имя начальной ветки, параметр autocrlf, параметр safecrlf(рис. [@fig:004])
+
+![4](image/4.png){#fig:004 width=90%}
+
+5.  Создание ssh ключа по алгоритму rsa с ключём размером 4096 бит(рис. [@fig:005])
+
+![5](image/5.png){#fig:005 width=90%}
+
+6.  Создание shh ключа по алгоритму erd25519(рис. [@fig:006])
+
+![6](image/6.png){#fig:006 width=90%}
+
+7.  Генерация ключа pgp(рис. [@fig:007])
+
+![7](image/7.png){#fig:007 width=90%}
+
+8. Выводим список ключей и копируем отпечаток приватного ключа(рис. [@fig:008])
+
+![8](image/8.png){#fig:008 width=90%}
+
+9.  В настройках github добавляем полученный ключ(рис. [@fig:009])
+
+![9](image/9.png){#fig:009 width=90%}
+
+10. Используя введенный email, указываем Git применять его при подписи коммитов(рис. [@fig:010])
+
+![10](image/10.png){#fig:010 width=90%}
+
+11. Авторизовываемся на аккаунт github(рис. [@fig:011])
+
+![11](image/11.png){#fig:011 width=90%}
+
+12. Создаем каталог и переходим в него(рис. [@fig:012])
+
+![12](image/12.png){#fig:012 width=90%}
+
+13. Создаем репозиторий на основе другого репозитория(рис. [@fig:013])
+
+![13](image/13.png){#fig:013 width=90%}
+
+14. Клонируем в os-intro(рис. [@fig:014])
+
+![14](image/14.png){#fig:014 width=90%}
+
+15. Переходим в каталог курса и удаляем лишние файлы(рис. [@fig:015])
+
+![15](image/15.png){#fig:015 width=90%}
+
+16. Создаем необходимые каталоги(рис. [@fig:016])
+
+![16](image/16.png){#fig:016 width=90%}
 
 # Выводы
 
-Здесь кратко описываются итоги проделанной работы.
+Благодаря данной лабораторной работе мы научились оформлять отчёты с помощью языка разметки Markdown.
 
 # Список литературы{.unnumbered}
 
