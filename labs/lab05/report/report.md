@@ -140,87 +140,87 @@ cat?
 
 1.  Копируем файл ~/abc1 в файл april и в файл may (рис. @fig:001).
 
-![1](1.png){#fig:001 width=90%}
+![1](image/1.png){#fig:001 width=90%}
 
 2.  Копируем файлы april и may в каталог monthly (рис. @fig:002).
 
-![2](2.png){#fig:002 width=90%}
+![2](image/2.png){#fig:002 width=90%}
 
 3.  Копируем файл monthly/may в файл с именем june (рис. @fig:003).
 
-![3](3.png){#fig:003 width=90%}
+![3](image/3.png){#fig:003 width=90%}
 
 4.  Копируем каталог monthly в каталог monthly.00 ; копируем каталог monthly.00 в каталог .tmp (рис. @fig:004)
 
-![4](4.png){#fig:004 width=90%}
+![4](image/4.png){#fig:004 width=90%}
 
 5.  Изменяем название файла april на july в домашнем каталоге ; перемещаем файл july в каталог monthly.00 (рис. @fig:005).
 
-![5](5.png){#fig:005 width=90%}
+![5](image/5.png){#fig:005 width=90%}
 
 6.  Переименовываем каталог monthly.00 в monthly 0.1 (рис. @fig:006).
 
-![6](6.png){#fig:006 width=90%}
+![6](image/6.png){#fig:006 width=90%}
 
 7.  Создаем каталог reports и перемещаем туда каталог monthly.01 (рис. @fig:007).
 
-![7](7.png){#fig:007 width=90%}
+![7]image/(7.png){#fig:007 width=90%}
 
 8.  Переименовываем каталог reports/monthly.01 в reports/monthly (рис. @fig:008).
 
-![8](8.png){#fig:008 width=90%}
+![8](image/8.png){#fig:008 width=90%}
 
 9.  Создаем файл ~/may с правом выполнения владельца (рис. @fig:009).
 
-![9](9.png){#fig:009 width=90%}
+![9](image/9.png){#fig:009 width=90%}
 
 10. Лишаем владельца файла ~/may права на выполнение (рис. @fig:010).
 
-![10](10.png){#fig:010 width=90%}
+![10](image/10.png){#fig:010 width=90%}
 
 11. Создаем каталог monthly с запретом на чтение для членов группы и всех остальных пользователей (рис. @fig:011).
 
-![11](11.png){#fig:011 width=90%}
+![11](image/11.png){#fig:011 width=90%}
 
 12. Создаем файл ~/abc1 с правом записи для членов группы (рис. @fig:012).
 
-![12](12.png){#fig:012 width=90%}
+![12](image/12.png){#fig:012 width=90%}
 
 13. Копируем файл /usr/include/sys/io.h в домашний каталог и называем его equipment (рис. @fig:013).
 
-![13](13.png){#fig:013 width=90%}
+![13](image/13.png){#fig:013 width=90%}
 
 14. В домашнем каталоге создаем директорию ~/ski.plases ; перемещает файл equipment в каталог ~/ski.plases (рис. @fig:014).
 
-![14](14.png){#fig:014 width=90%}
+![14](image/14.png){#fig:014 width=90%}
 
 15. Переименовываем файл ~/ski.plases/eqipment в ~/ski.plases/equiplist (рис. @fig:015).
 
-![15](15.png){#fig:015 width=90%}
+![15](image/15.png){#fig:015 width=90%}
 
 16. Создаем в домашнем каталоге файл abc1 и копируем его в каталоге ~/ski.plases назвав его equiplist2 (рис. @fig:016).
 
-![16](16.png){#fig:016 width=90%}
+![16](image/16.png){#fig:016 width=90%}
 
 17. Создаем каталог с именем equipment в каталоге ~/ski.plases (рис. @fig:017).
 
-![17](17.png){#fig:017 width=90%}
+![17](image/17.png){#fig:017 width=90%}
 
 18. Перемещаем файлы ~/ski.plases/equiplist и equiplist в каталог ~/ski.plases/equipment (рис. @fig:018).
 
-![18](18.png){#fig:017 width=90%}
+![18](image/18.png){#fig:017 width=90%}
 
 19. Создаем и перемещаем каталог ~/newdir в каталог ~/ski.plases и называем его plans (рис. @fig:019).
 
-![19](19.png){#fig:019 width=90%}
+![19](image/19.png){#fig:019 width=90%}
 
 20. Создаем файлы australia, play, my_os, feathers ; определяем опции команлы chmod необходимые для того, чтобы присвоить перечисленным файлам выделенные права доступа, считая, что в начале таких прав нет (рис. @fig:020).
 
-![20](20.png){#fig:020 width=90%}
+![20](image/20.png){#fig:020 width=90%}
 
 21. Копируем файл ~/feathers в файл ~/file.old ; перемещаем файл ~/file.old в каталог ~/play ; копируем каталог ~/play в каталог ~/fun ; перемещаем каталог ~/fun в каталог ~/play и называем его games ; лишаем владельца файла ~/feathers права на чтение  (рис. @fig:021).
 
-![21](21.png){#fig:021 width=90%}
+![21](image/21.png){#fig:021 width=90%}
 
 # Контрольные вопросы
 
